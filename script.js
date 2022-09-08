@@ -22,16 +22,20 @@ for (let i = 0; i < 5; i++) {
         console.log('Данные внесены')
         mainList.shopProducts[i] = a
     } else {
-
+            mainList.shopProducts[i]= null
     }
 }
 
-if( time >8 && time <18) {
+if (time > 8 && time < 18) {
+    mainList.open = true
     console.log('магазин работает')
 } else {
     console.log('магазин не работает')
+    mainList.open = false
+
 }
 
 console.log(mainList)
 
-
+ 
+ 
